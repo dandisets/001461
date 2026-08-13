@@ -3,30 +3,321 @@
 # and obtained from the dandiarchive.
 '@context': 
   https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.9/context.json
+about: []
 access:
-- embargoedUntil: '2028-03-10'
+- embargoedUntil: '2026-06-18'
   schemaKey: AccessRequirements
-  status: dandi:EmbargoedAccess
+  status: dandi:OpenAccess
+acknowledgement: We thank the Allen Institute founder, Paul G. Allen, for his vision,
+  encouragement, and support.
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: microscopy approach; cell population imaging
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 194506292932
+  numberOfFiles: 140
+  numberOfSubjects: 14
   schemaKey: AssetsSummary
-citation: OpenScope Texture (2026). (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001461/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured:
+  - OpticalChannel
+  - ProcessingModule
+  - PlaneSegmentation
+  - ImagingPlane
+citation: Amaya, Avalon; Bawany, Ahad; Bolaños, Federico; Caldejon, Shiella; Gardner,
+  James; Groblewski, Peter; Han, Warren; Johnson, Tye; Kenney, Jaimie; Lecoq, Jérôme
+  A.; Loeffler, Henry; Murphy, Tim; Orlandi, Javier; Park, Jimin; Peene, R. Carter;
+  Stearns, Alex; Swapp, Jackie; Tom, Madeline; Weber, Julie; Williford, Ali; Young,
+  Ahrial (2026) Allen Institute OpenScope - Texture (Version draft) [Data set]. DANDI
+  Archive. https://dandiarchive.org/dandiset/001461/draft
 contributor:
 - awardNumber: 1 U24 NS 113646-05
   name: National Institutes of Health (NIH)
   roleName:
   - dcite:Funder
   schemaKey: Organization
+- affiliation:
+  - name: Washington State University
+    schemaKey: Affiliation
+  email: avalon.amaya@wsu.edu
+  identifier: 0000-0003-2274-2892
+  includeInCitation: true
+  name: Amaya, Avalon
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: ahad.bawany@alleninstitute.org
+  includeInCitation: true
+  name: Bawany, Ahad
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: University of British Columbia
+    schemaKey: Affiliation
+  email: federico.bolanos@ubc.ca
+  identifier: 0000-0002-9315-8645
+  includeInCitation: true
+  name: Bolaños, Federico
+  roleName:
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: shiellac@alleninstitute.org
+  includeInCitation: true
+  name: Caldejon, Shiella
+  roleName:
+  - dcite:DataCollector
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: University of Calgary
+    schemaKey: Affiliation
+  email: james.gardner@ucalgary.ca
+  identifier: 0009-0009-3070-0431
+  includeInCitation: true
+  name: Gardner, James
+  roleName:
+  - dcite:FormalAnalysis
+  - dcite:Software
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: peterg@alleninstitute.org
+  identifier: 0000-0002-8415-1118
+  includeInCitation: true
+  name: Groblewski, Peter
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: warren.han@alleninstitute.org
+  identifier: 0009-0006-0104-0380
+  includeInCitation: true
+  name: Han, Warren
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: tye.johnson@alleninstitute.org
+  identifier: 0009-0006-7239-7571
+  includeInCitation: true
+  name: Johnson, Tye
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: jaimie.kenney@alleninstitute.org
+  identifier: 0009-0003-5308-2783
+  includeInCitation: true
+  name: Kenney, Jaimie
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: jeromel@alleninstitute.org
+  identifier: 0000-0002-0131-0938
+  includeInCitation: true
+  name: Lecoq, Jérôme A.
+  roleName:
+  - dcite:ProjectAdministration
+  - dcite:ContactPerson
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: henry.loeffler@alleninstitute.org
+  identifier: 0009-0007-3935-6863
+  includeInCitation: true
+  name: Loeffler, Henry
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: University of British Columbia
+    schemaKey: Affiliation
+  email: tim.murphy@ubc.ca
+  includeInCitation: true
+  name: Murphy, Tim
+  roleName:
+  - dcite:FundingAcquisition
+  - dcite:Conceptualization
+  schemaKey: Person
+- affiliation:
+  - name: University of Calgary
+    schemaKey: Affiliation
+  email: javier.orlandi@ucalgary.ca
+  identifier: 0000-0001-5683-1717
+  includeInCitation: true
+  name: Orlandi, Javier
+  roleName:
+  - dcite:Supervision
+  - dcite:FormalAnalysis
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: jimin.park@alleninstitute.org
+  includeInCitation: true
+  name: Park, Jimin
+  roleName:
+  - dcite:DataCollector
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: carter.peene@alleninstitute.org
+  identifier: 0009-0000-6660-2264
+  includeInCitation: true
+  name: Peene, R. Carter
+  roleName:
+  - dcite:Software
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: alex.stearns@alleninstitute.org
+  identifier: 0009-0001-8861-5290
+  includeInCitation: true
+  name: Stearns, Alex
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: jackies@alleninstitute.org
+  identifier: 0009-0008-4965-6242
+  includeInCitation: true
+  name: Swapp, Jackie
+  roleName:
+  - dcite:Supervision
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: madeline.tom@alleninstitute.org
+  identifier: 0009-0008-6695-230X
+  includeInCitation: true
+  name: Tom, Madeline
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: julie.weber@alleninstitute.org
+  identifier: 0009-0002-1060-3828
+  includeInCitation: true
+  name: Weber, Julie
+  roleName:
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: aliw@alleninstitute.org
+  identifier: 0009-0000-7282-7515
+  includeInCitation: true
+  name: Williford, Ali
+  roleName:
+  - dcite:Supervision
+  - dcite:Researcher
+  schemaKey: Person
+- affiliation:
+  - name: Allen Institute for Brain Science
+    schemaKey: Affiliation
+  email: ahrial.young@alleninstitute.org
+  includeInCitation: true
+  name: Young, Ahrial
+  roleName:
+  - dcite:DataCollector
+  - dcite:Researcher
+  schemaKey: Person
 dateCreated: '2025-05-23T16:54:01.265469+00:00'
-description: Texture Project
+description: 'How do mice internally represent complex visual stimuli, and how do
+  they use this information to guide behavior during decision making? In this project,
+  we focused on visual textures: images composed of repeated patterns that obey translational,
+  rotational, or scale symmetries. These textures are common in the natural world
+  and provide important cues for identifying objects and their properties.  The Texture
+  Dataset consists of 2 animal cohorts. A naive one, in which mice were shown the
+  same set of visual textures across multiple sessions (16 different textures families,
+  with 28 images per family, also called exemplars). And a trained one, in which mice
+  were first trained in a visually-guided discrimination task involving textures.
+  Mice were initially trained following the standard change-detect Visual Behavior
+  optical Physiology protocol. After the training stage with gratings was completed,
+  mice were switched toa a new task involving the texture images instead. This task
+  (orange) mimicked the original “familiar images” task protocol, but instead used
+  a new set of texture images (8 families, 1 exemplar per family). So 8 different
+  images in total. After learning this stage, ,mice were switched to the final task
+  (in green) where they had to visually discriminate between image families (rather
+  than just images). To that end, what would typically be a set of consecutive trials
+  with the same image (no-go trials) was replaced by a set of different images from
+  the same family (exemplars). That is, mice had to visually discriminate between
+  texture families (e.g., images of rocks vs images of leaves), rather than just different
+  stimulii. After 4-5 sessions in this task, the mice were switched to the same passive
+  viewing protocol (blue) as the naive mice.'
+ethicsApproval:
+- contactPoint:
+    schemaKey: ContactPoint
+  identifier: ​Allen Institute Institutional Animal Care and Use Committee (IACUC),
+    protocol 2117
+  schemaKey: EthicsApproval
 id: DANDI:001461/draft
 identifier: DANDI:001461
+keywords:
+- openscope
+- ophys
+- mesoscope
+- 2-photon
+- fluorescence
+- calcium imaging
+- mouse
+- textures
+license:
+- spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001461/versions/draft/assets/
-name: OpenScope Texture
+name: Allen Institute OpenScope - Texture
+relatedResource:
+- name: OpenScope’s Texture Dataset
+  relation: dcite:IsDescribedBy
+  repository: OpenScope Databook
+  resourceType: dcite:ComputationalNotebook
+  schemaKey: Resource
+  url: https://alleninstitute.github.io/openscope_databook/texture/
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.9
 url: https://dandiarchive.org/dandiset/001461/draft
 version: draft
+wasGeneratedBy: []
